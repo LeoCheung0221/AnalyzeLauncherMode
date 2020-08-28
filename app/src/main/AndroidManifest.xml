@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tufusi.launchermode">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".standard.AStandardActivity"
+            android:launchMode="standard"
+            android:taskAffinity="com.tufusi.launchermode" />
+        <activity
+            android:name=".standard.BStandardActivity"
+            android:launchMode="standard"
+            android:taskAffinity="com.tufusi.launchermode.another" />
+        <activity
+            android:name=".standard.CStandardActivity"
+            android:launchMode="standard"
+            android:taskAffinity="com.tufusi.launchermode" />
+
+        <activity
+            android:name=".singletop.ASingleTopActivity"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.tufusi.launchermode" />
+        <activity
+            android:name=".singletop.BSingleTopActivity"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.tufusi.launchermode" />
+        <activity
+            android:name=".singletop.CSingleTopActivity"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.tufusi.launchermode.another" />
+
+        <activity
+            android:name=".singletask.ASingleTaskActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.tufusi.launchermode" />
+        <activity
+            android:name=".singletask.BSingleTaskActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.tufusi.launchermode" />
+        <activity
+            android:name=".singletask.CSingleTaskActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.tufusi.launchermode.another" />
+
+        <activity
+            android:name=".singleinstance.ASingleInstanceActivity"
+            android:launchMode="singleInstance"
+            android:taskAffinity="com.tufusi.launchermode" />
+        <activity
+            android:name=".singleinstance.BSingleInstanceActivity"
+            android:launchMode="singleInstance"
+            android:taskAffinity="com.tufusi.launchermode" />
+        <activity
+            android:name=".singleinstance.CSingleInstanceActivity"
+            android:launchMode="singleInstance"
+            android:taskAffinity="com.tufusi.launchermode.another" />
+
+        <activity
+            android:name=".MainActivity"
+            android:taskAffinity="com.tufusi.launchermode">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".forwardresult.AForwardActivity"
+            android:label="forwardresult">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".forwardresult.BForwardActivity" />
+        <activity android:name=".forwardresult.CForwardActivity" />
+    </application>
+
+</manifest>
